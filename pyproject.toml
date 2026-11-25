@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "worktree-hub"
+version = "0.1.0"
+description = "Zero-dependency multi-agent git worktree hub CLI for Claude Code, Codex, Antigravity, Cursor, and VS Code."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+dependencies = []
+keywords = [
+    "git-worktree",
+    "claude-code",
+    "codex",
+    "antigravity",
+    "cursor",
+    "vscode",
+    "multi-agent",
+    "cli",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Version Control :: Git",
+]
+
+[project.scripts]
+worktree-hub = "worktree_hub:main"
+
+[tool.setuptools]
+py-modules = ["worktree_hub"]
